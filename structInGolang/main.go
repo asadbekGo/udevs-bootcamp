@@ -25,9 +25,6 @@ func main() {
 				fmt.Printf("\n1. Get All\n2. Get\n3. Create\n4. Update\n5. Delete\n6. Menu\n0. Exit\n\n")
 				fmt.Scan(&contactNumber)
 
-				if contactNumber == 6 {
-					break
-				}
 				c.Contacts(contactNumber)
 			}
 		case 2:
@@ -35,10 +32,6 @@ func main() {
 				var taskNumber int
 				fmt.Printf("\n1. Get All\n2. Get\n3. Create\n4. Update\n5. Delete\n6. Menu\n0. Exit\n\n")
 				fmt.Scan(&taskNumber)
-
-				if taskNumber == 6 {
-					break
-				}
 
 				t.Tasks(taskNumber)
 			}
